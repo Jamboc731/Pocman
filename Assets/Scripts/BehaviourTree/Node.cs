@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public struct Node
+public class Node
 {
 
-    public List<Node> previousNode;
+    public Node n;
+    public string hi;
     
-    public Node(Node pNode)
-    {
-        previousNode = new List<Node>();
-        previousNode.Add(new Node(pNode));
-    }
 
 }
 
